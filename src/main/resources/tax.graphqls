@@ -1,0 +1,24 @@
+schema{
+	query:Query
+}
+
+type Query{
+	getAllTax : [Tax]
+	findTax(countyCode: String) : Tax
+}
+
+type Tax{
+	id: String
+	countryCode: String
+	country: String
+	countryRate: String
+	stateCode: String
+	state: String
+	stateRate: String
+	cityCode: String
+	city: String
+	cityRate: String
+	countyCode: String
+	county: String
+	countyRate: String
+}
